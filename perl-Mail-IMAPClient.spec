@@ -1,14 +1,13 @@
-%define real_name Mail-IMAPClient
+%define module Mail-IMAPClient
 
-Summary:	Mail::IMAPClient - an IMAP Client API
-Name:		perl-%{real_name}
-Version:	2.2.9
-Release:	%mkrel 3
+Name:		perl-%{module}
+Version:	3.00
+Release:	%mkrel 1
+Summary:	An IMAP Client API
 License:	GPL or Artistic
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{real_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/D/DJ/DJKERNEN/%{real_name}-%{version}.tar.bz2
-Patch0:		Mail-IMAPClient-2.2.9-imapsync-1.182.diff
+URL:		http://search.cpan.org/dist/%{module}
+Source:     http://www.cpan.org/modules/by-module/Mail/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Errno)
@@ -20,23 +19,20 @@ BuildRequires:	perl(IO::Socket)
 BuildRequires:	perl(Parse::RecDescent)
 BuildRequires:	perl(Socket)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module provides Perl routines that simplify a sockets connection to and an
 IMAP conversation with an IMAP server.
 
 %prep
-
-%setup -q -n %{real_name}-%{version}
-%patch0 -p0
+%setup -q -n %{module}-%{version}
 
 # fix perl path
 find -type f | xargs perl -pi -e "s|/usr/local/bin/perl|%{_bindir}/perl|g"
 
 %build
-yes n | %{__perl} Makefile.PL INSTALLDIRS=vendor
-
+%{__perl} Makefile.PL INSTALLDIRS=vendor < /dev/null
 %make
 
 %check
@@ -56,10 +52,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc Artistic Copying COPYRIGHT README Todo docs examples
-%dir %{perl_vendorlib}/Mail/IMAPClient
-%{perl_vendorlib}/Mail/IMAPClient/*
-%{perl_vendorlib}/Mail/IMAPClient.pm
-%{perl_vendorlib}/Mail/IMAPClient.pod
+%doc COPYRIGHT README Todo examples
+%{perl_vendorlib}/Mail
 %{_mandir}/man3/*
 
