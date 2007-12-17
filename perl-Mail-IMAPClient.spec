@@ -19,7 +19,6 @@ BuildRequires:	perl(IO::Socket)
 BuildRequires:	perl(Parse::RecDescent)
 BuildRequires:	perl(Socket)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module provides Perl routines that simplify a sockets connection to and an
