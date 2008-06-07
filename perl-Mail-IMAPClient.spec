@@ -1,14 +1,13 @@
 %define module Mail-IMAPClient
 
 Name:		perl-%{module}
-Version:	3.07
+Version:	3.08
 Release:	%mkrel 1
 Summary:	An IMAP Client API
 License:	GPL or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Mail/%{module}-%{version}.tar.gz
-BuildRequires:	perl-devel
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Errno)
 BuildRequires:	perl(Exporter)
@@ -52,7 +51,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc COPYRIGHT README Todo examples
+%doc COPYRIGHT README examples
 %{perl_vendorlib}/Mail
 %{_mandir}/man3/*
 
