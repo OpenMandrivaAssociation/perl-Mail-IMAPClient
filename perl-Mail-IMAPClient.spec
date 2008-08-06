@@ -2,7 +2,7 @@
 
 Name:		perl-%{module}
 Version:	3.08
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	An IMAP Client API
 License:	GPL or Artistic
 Group:		Development/Perl
