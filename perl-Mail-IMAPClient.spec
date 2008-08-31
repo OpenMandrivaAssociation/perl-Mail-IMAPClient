@@ -1,8 +1,8 @@
 %define module Mail-IMAPClient
 
 Name:		perl-%{module}
-Version:	3.08
-Release:	%mkrel 2
+Version:	3.10
+Release:	%mkrel 1
 Summary:	An IMAP Client API
 License:	GPL or Artistic
 Group:		Development/Perl
