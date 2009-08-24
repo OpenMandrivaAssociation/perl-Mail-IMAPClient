@@ -1,5 +1,5 @@
 %define upstream_name    Mail-IMAPClient
-%define upstream_version 3.19
+%define upstream_version 3.20
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
