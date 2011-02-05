@@ -1,5 +1,5 @@
 %define upstream_name    Mail-IMAPClient
-%define upstream_version 3.25
+%define upstream_version 3.26
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -52,6 +52,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc COPYRIGHT README examples
+%doc README examples
 %{perl_vendorlib}/Mail
 %{_mandir}/man3/*
