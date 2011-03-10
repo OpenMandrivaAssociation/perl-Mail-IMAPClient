@@ -1,9 +1,9 @@
 %define upstream_name    Mail-IMAPClient
-%define upstream_version 3.27
+%define upstream_version 3.28
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:	An IMAP Client API
 License:	GPL+ or Artistic
