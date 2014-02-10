@@ -1,4 +1,5 @@
 removed_sources:
   Mail-IMAPClient-3.28.tar.gz: 48bf67c597f749081bde53e9e9a82d5f9d226f53
-sources:
   Mail-IMAPClient-3.33.tar.gz: 0c522d4c9f990357e5ad786d450d9a3430999da5
+sources:
+  Mail-IMAPClient-3.35.tar.gz: 96cbe63b112cdd7c411566c5ae3ed8dafba4f7bd
