@@ -1,5 +1,5 @@
 %define modname	Mail-IMAPClient
-%define modver 3.33
+%define modver 3.35
 
 # We never had it and unlikely really need
 %if %{_use_internal_dependency_generator}
@@ -53,5 +53,6 @@ find %{buildroot} -type d -exec chmod 0755 {} \;
 %doc README examples
 %{perl_vendorlib}/Mail
 %{_mandir}/man3/*
+
 
 
