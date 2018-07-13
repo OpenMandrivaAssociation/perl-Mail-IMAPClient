@@ -15,6 +15,7 @@ Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Mail/Mail-IMAPClient-%{modver}.tar.gz
 BuildArch:	noarch
+BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Carp)
 BuildRequires:	perl(Errno)
 BuildRequires:	perl(Exporter)
