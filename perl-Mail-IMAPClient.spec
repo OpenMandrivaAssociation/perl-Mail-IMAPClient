@@ -1,17 +1,17 @@
 %define modname	Mail-IMAPClient
-%define modver 3.39
+%define modver 3.43
 
 # We never had it and unlikely really need
 %global __requires_exclude perl\\(Mozilla::LDAP::Conn\\)
 
 Summary:	An IMAP Client API
 Name:		perl-%{modname}
-Version:	%perl_convert_version %{modver}
-Release:	2
+Version:	%{modver}
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Mail/Mail-IMAPClient-%{modver}.tar.gz
+Url:		https://github.com/plobbes/mail-imapclient
+Source0:	https://cpan.metacpan.org/authors/id/P/PL/PLOBBES/Mail-IMAPClient-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	make
 BuildRequires:	perl(Test::More)
