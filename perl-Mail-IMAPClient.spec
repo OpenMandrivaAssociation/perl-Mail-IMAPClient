@@ -7,7 +7,7 @@
 Summary:	An IMAP Client API
 Name:		perl-%{modname}
 Version:	%{modver}
-Release:	1
+Release:1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/plobbes/mail-imapclient
